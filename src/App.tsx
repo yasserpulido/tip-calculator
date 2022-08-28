@@ -4,6 +4,9 @@ import Logo from "./assets/images/logo.svg";
 import React from "react";
 
 function App() {
+  // Use following code to make images works on GitHub Pages.
+  // const logo = "./static/media/logo.3cc0528bd46321d63d85702006069614.svg";
+
   return (
     <React.Fragment>
       <div className="m-auto">
