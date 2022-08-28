@@ -1,13 +1,150 @@
 body {
+  background-color: #c5e4e7;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  color: hsl(184, 14%, 56%);
+  font-family: "Space Mono", monospace;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+input {
+  border: none;
+  background-color: #f3f8fb;
+  width: 100%;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: 4px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 1;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+#root {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-wrapper {
+  background-color: #f3f8fb;
+  border-radius: 4px;
+  padding: 0.6rem;
+  display: flex;
+}
+
+.btn-wrapper-active {
+  outline: 3px solid #61aaa1;
+}
+
+.btn-wrapper-error {
+  outline: 3px solid #b38472;
+}
+
+.btn-tip {
+  background-color: #00474b;
+  color: hsl(189, 41%, 97%);
+  padding: 0.6rem;
+  border: none;
+}
+
+.btn-tip:hover,
+.btn-tip:active,
+.btn-tip:focus {
+  background-color: #9fe8df;
+  color: #00474b;
+}
+
+.btn-check:active + .btn,
+.btn-check:checked + .btn,
+.btn.active,
+.btn.show,
+.btn:active {
+  background-color: #26c2ad;
+  color: #00474b;
+}
+
+.result-side {
+  background-color: #00474b;
+  border-radius: 1rem;
+  color: #ffffff;
+  padding: 3rem;
+  margin-left: 1rem;
+}
+
+.control-side {
+  margin-right: 1rem;
+}
+
+.control-side__mobile {
+  margin: 0;
+}
+
+.result-side--subtitle {
+  color: hsl(184, 14%, 56%);
+  font-size: 0.8rem;
+}
+
+.btn-reset {
+  background-color: #26c2ad;
+  color: #00474b;
+}
+
+.btn-reset:hover {
+  background-color: #9fe8df;
+  color: #035c62;
+}
+
+.btn-reset:disabled {
+  background-color: #0d686d;
+  color: #035c62;
+}
+
+.total {
+  font-size: 1.5rem;
+}
+
+.card {
+  max-width: 900px;
+  min-height: 400px;
+  padding: 2.5rem;
+  margin: auto;
+  border-radius: 1rem;
+}
+
+footer {
+  margin-top: auto;
+  height: 2rem;
+  color: #bdc3c7;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 768px) {
+  .result-side {
+    margin-left: 0;
+  }
+
+  .control-side {
+    margin-right: 0;
+  }
+
+  .control-side__mobile {
+    margin-bottom: 2rem;
+  }
 }
